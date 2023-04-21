@@ -1,0 +1,131 @@
+
+.hero{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:80%;
+    margin: 0 auto;
+    padding: 150px 0px;
+    overflow-y: hidden;
+}
+
+.hero-info{
+    font-family: "Roboto Slab", "Poppins";
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 50%;
+    height: 100%;
+    
+    
+}
+
+.hero-title {
+    font-weight: 900;
+    color: #f1f1f1;
+    font-size: 65px;
+    line-height: 1.1;
+}
+.hero-name{
+    font-weight: 600;
+    color: #f1f1f1;
+    font-size: 60px;
+    line-height: 1.1;
+}
+.hero-subtitle{
+    font-weight: 900;
+    color: #aaaaaa;
+    font-size: 55px;
+    line-height: 1.1;
+}
+.hero-text{
+    font-weight: 400px;
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 1.1;
+    /* width: 60%; */
+}
+.cv-div{
+    margin-top: 20px;
+}
+.dowload-cv{
+    background-color: #FF3A5E;
+    color: white;
+    font-size: 16px;
+    padding: 10px 80px;
+    border: none;
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out, padding 0.5s ease-in-out; /* adicionando a transição para a largura */
+    text-align: center;
+    margin-top: 40px;
+  
+}
+.dowload-cv:hover {
+    transition: padding 0.5s ease-in-out; /* adicionando a transição para a largura apenas na pseudo-classe hover */
+    background-color: #FF3A5E;
+    padding: 10px 100px;
+}
+
+
+.scroll-icon {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: scroll 2s infinite;
+  
+}
+
+
+  @keyframes scroll {
+    0% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+  }
+
+
+
+
+
+
+@media (max-width: 975px) {
+    .hero{
+        flex-direction: column;
+        width: 95%;
+    }
+    .hero-info{
+        text-align: center;
+        gap: 20px;
+        width: 100%;
+    }
+    .hero-text{
+        width: auto;
+        padding: 2px; 
+    
+    }
+    img{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    .hero-title,
+    .hero-name{
+        font-size: 50px;
+    }
+    .hero-subtitle{
+        font-size: 30px;
+    }
+    .hero-text{
+        
+        font-size: 16px;
+        
+    }
+}
