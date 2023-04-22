@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,600;1,700;1,800;1,900&display=swap');
 
 
-body{
+/* body{
   background-color: #19191D;
 }
 .header {
@@ -17,7 +17,38 @@ body{
   min-height: 65px;
   width: 80%;
   margin: 0 auto ;
+  
+
+} */
+
+body{
+  background-color: #19191D;
+  padding-top: 65px; /* altura do header */
 }
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  min-height: 75px;
+  box-shadow: 0px 1px 2px rgba(255, 255, 255, .1); /* box-shadow sutil */
+  z-index: 2;
+
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  min-height: 75px;
+  width: 80%;
+  margin: 0 auto ;
+
+  
+}
+
 
 .hamburger {
   display: none;
@@ -31,12 +62,16 @@ body{
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   background-color: #ffffff;
+
 }
 
 .nav-menu {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  
+
 }
 
 .nav-item {

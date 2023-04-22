@@ -1,0 +1,108 @@
+.tecnologias-container {
+    width: 80%;
+    margin: 0px auto;
+    margin-bottom: 32rem;
+    display: flex;
+    gap: 20px;
+    color: white;
+    height: 200px;
+    justify-content: space-between;
+}
+
+
+.tecnologias-info{
+  width: 50%;
+ 
+}
+.tecnologias-info h2{
+   font-size: 32px;
+   margin-bottom: 18px;
+   
+}
+
+
+.tecnologia-description h3{
+    font-size: 24px;
+}
+
+.tecnologia-description {
+    font-size: 18px;
+    padding: 3px;
+   
+}
+
+.tecnologias-icones{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:  30px;
+    
+}
+
+.tecnologias-icones span{
+   
+    padding: 25px;
+    box-shadow: 1px 1px 1px 1px rgba(251, 250, 250, 0.1); /* box-shadow sutil */
+    
+}
+
+.tecnologias-icones span:hover{
+    cursor: pointer;
+}
+.tecnologias-icones svg{
+    width: 60px;
+    height: 60px;
+    
+}
+  /* .tecnologias-titulo {
+    font-size: 40px;
+    font-weight: 700;
+    padding-bottom: 40px;
+  }
+  
+  . {
+    font-size: 50px;
+    display: flex;
+    gap: 20px;
+  }
+  
+  i {
+    transition: 0.2s ease-in;
+  }
+  
+  i:hover {
+    color: #f5b04b;
+  }
+  
+  .tecnologias-info {
+    padding-left: 100px;
+    font-size: 20px;
+    line-height: 1.3;
+  }
+  
+  .tecnologia-nome {
+    font-size: 40px;
+    padding-bottom: 20px;
+    font-family: "Roboto Slab", "Poppins";
+  } */
+
+
+
+  @media (max-width: 975px) {
+    .tecnologias-container{
+      flex-wrap: wrap;
+     
+      
+    }
+    .tecnologias-info{
+      width: 100%;
+      margin-bottom: 24px;
+      height: 200px;
+      
+    }
+
+    .tecnologias-icones{
+      margin: 0 auto;
+    }
+
+}

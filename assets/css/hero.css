@@ -8,6 +8,8 @@
     margin: 0 auto;
     padding: 150px 0px;
     overflow-y: hidden;
+    margin-bottom: 32rem;
+    z-index: 0;
 }
 
 .hero-info{
@@ -17,7 +19,6 @@
     gap: 20px;
     width: 50%;
     height: 100%;
-    
     
 }
 
@@ -48,6 +49,7 @@
 }
 .cv-div{
     margin-top: 20px;
+   
 }
 .dowload-cv{
     background-color: #FF3A5E;
@@ -59,7 +61,7 @@
     transition: transform 0.3s ease-in-out, padding 0.5s ease-in-out; /* adicionando a transição para a largura */
     text-align: center;
     margin-top: 40px;
-  
+    cursor: pointer;
 }
 .dowload-cv:hover {
     transition: padding 0.5s ease-in-out; /* adicionando a transição para a largura apenas na pseudo-classe hover */
@@ -98,6 +100,7 @@
     .hero{
         flex-direction: column;
         width: 95%;
+        z-index: 1;
     }
     .hero-info{
         text-align: center;
@@ -109,7 +112,7 @@
         padding: 2px; 
     
     }
-    img{
+    .img-right img{
         display: none;
     }
 }

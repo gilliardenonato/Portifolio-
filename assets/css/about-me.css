@@ -1,0 +1,51 @@
+.about-me-info{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 32rem;
+    align-items: center;
+}
+
+.about-me-text h1{
+    font-weight: 900;
+    color: #f1f1f1;
+    font-size: 65px;
+    line-height: 1.1;
+    margin-bottom: 24px;
+}
+
+.about-me-text p{
+    max-width: 80%; 
+    font-weight: 400px;
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 1.1;
+    /* width: 60%; */
+    text-align: justify;
+}
+
+
+@media (max-width: 975px) {
+    .about-me-info{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 32px;
+        width: 95%;
+        text-align: center;
+       
+        
+    }
+
+    .about-me-text p{
+        max-width: 95%;
+        margin: 0 auto;
+        font-size: 16px;
+        font-weight: normal;
+       
+    }
+
+    .about-me-img img{
+        width: 50%;
+    }
+}
